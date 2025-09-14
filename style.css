@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+  --cor-principal: #6E859F;
+  --cor-secundaria: #284260;
+  --cor-destaque: black;
+
+  --laranja-claro: #FF862A;
+  --alto-contraste-fundo: #000000;
+  --alto-contraste-texto: #ffffff;
+  --alto-contraste-link: #ffd700;
+}
+
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  color: var(--cor-principal);
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h5 {
+  color: var(--cor-secundaria);
+  font-weight: 700;
+}
+
+.lead,
+.btn-link {
+  color: var(--cor-destaque);
+  font-weight: 700;
+}
+
+a,
+.btn-link:hover {
+  color: var(--cor-principal)
+}
+
+a:hover {
+  color: var(--cor-destaque);
+}
+
+/* ====== MENU DE ACESSIBILIDADE ====== */
+.menu-acessibilidade {
+  position: fixed;
+  top: 2rem;
+  right: 20px;
+  z-index: 1000;
+}
+
+.rotacao-botao {
+  transform: rotate(-90deg);
+  transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+  margin-bottom: 5px;
+}
+
+.apresenta-lista {
+  display: none;
+}
+
+.alto-contraste {
+  background-color: var(--alto-contraste-fundo);
+  color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer {
+  background-color: var(--alto-contraste-fundo);
+  color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+  color: var(--alto-contraste-link);
+}
+
+.alto-contraste .btn-primary {
+  background-color: var(--alto-contraste-link);
+  color: var(--alto-contraste-fundo);
+}

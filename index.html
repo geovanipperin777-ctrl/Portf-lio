@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Meu portfólio</title>
+</head>
+
+<body>
+  <!-- MENU DE ACESSIBILIDADE -->
+  <div id="acessibilidade" class="menu-acessibilidade">
+    <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">
+      acessibilidade
+    </button>
+    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+      <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+      <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+      <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores">
+        <i class="bi bi-shadows"></i>
+      </button>
+    </div>
+  </div>
+
+  <header class="container text-center">
+    <img src="img/meuAvatar.png" alt="avatar da Fernanda" class="rounded-circle" width="150" height="150">
+    <p class="lead">Eu sou Geovani Perini</p>
+    <h1>Eu sou um Programador</h1>
+    <p>Sou cursado em Técnico de Informática pela Etec Philadelpho! Sou apto a programar em HTML, CSS, JAVA, JAVASCRIP,
+      MYSQL, PHP, entre outros.</p>
+    <p>Minhas habilidades</p>
+    <div>
+      <p class="badge bg-secondary">HTML</p>
+      <p class="badge bg-secondary">CSS</p>
+      <p class="badge bg-secondary">JavaScript</p>
+      <p class="badge bg-secondary">PHP</p>
+      <p class="badge bg-secondary">MYSQL</p>
+      <p class="badge bg-secondary">JAVA</p>
+    </div>
+  </header>
+
+  <main class="container mt-5">
+    <h2>Meus projetos</h2>
+    <div class="row d-flex justify-content-center">
+      <!-- Projeto 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/Tela Inicial - Usuário no tema escuro.jpeg" class="card-img-top"
+            alt="Imagem do projeto de biblioteca virtual">
+          <div class="card-body">
+            <h5 class="card-title">CTEC: Currículo Técnico Educacional</h5>
+            <p class="card-text">É uma plataforma que facilita a criação de currículos com modelos prontos e paletas
+              profissionais, além de agilizar o preenchimento com dados acadêmicos e extracurriculares. Os candidatos
+              podem anexar seus currículos a vagas no mural ou iniciar contato via WhatsApp, acompanhando tudo em um
+              painel pessoal. As informações são protegidas por login seguro, e as empresas passam por análise prévia
+              para garantir confiabilidade. Já as empresas podem divulgar vagas, receber currículos organizados e
+              gerenciá-los de forma prática, alterando status ou desativando quando necessário.</p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o
+              projeto</button>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <!-- Modal 1 -->
+  <div class="modal" id="modal1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">CTEC: Currículo Técnico Educacional</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>O CTEC é uma plataforma web voltada para conectar estudantes e empresas em um único ambiente de gestão de
+            carreiras, a fim de ajudar usuários a criarem seus currículos com base em modelos prontos e paletas de cores
+            profissionais. A plataforma conta com recursos inteligentes que agilizam o preenchimento do currículo,
+            aproveitando automaticamente dados acadêmicos e extracurriculares.</p>
+
+          <p>Além disso, ajudamos a usar esse currículo de forma rápida e eficaz, disponibilizando um mural de vagas com
+            a fácil anexação do currículo a essas oportunidades, ou então a possibilidade de iniciar uma conversa via
+            WhatsApp com a empresa responsável pela vaga. Pensando na segurança e privacidade, o CTEC garante a proteção
+            dos dados dos usuários, com acesso restrito por login e armazenamento seguro das informações.</p>
+
+          <p>As empresas cadastradas na plataforma passam por uma análise prévia feita pela equipe administrativa,
+            garantindo maior confiabilidade no processo seletivo. </p>
+
+          <p>Para os candidatos, oferecemos também um painel pessoal onde é possível acompanhar os currículos enviados e
+            gerenciar o próprio perfil com facilidade. A fim de melhor divulgação de oportunidades, ajudamos as empresas
+            a divulgarem suas vagas no nosso mural. Após a publicação, elas têm acesso a uma base organizada dos
+            currículos recebidos para cada vaga, podendo gerenciá-las de forma prática, alterando o status conforme
+            necessário, além de desativar ou excluir vagas que não estejam mais disponíveis.</p>
+
+          <img src="img/Tela de exibição das vaga.jpeg" class="img-fluid w-100"
+            alt="Imagem representativa de um projeto voltado à currículos">
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/geovanipperin777-ctrl/CTEC">Ver código do projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container py-5">
+    <h2>Entre em contato</h2>
+    <div>
+      <i class="bi bi-github"></i>
+      <a href="https://github.com/geovanipperin777-ctrl">GitHub</a>
+    </div>
+    <p class="my-5 text-center">© Copyright 2025. Produzido por Geovani Perini</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
